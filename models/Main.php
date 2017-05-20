@@ -9,6 +9,8 @@ class Main
 
         $result = $db->query('SELECT id, title, date, author_name, short_content FROM news ORDER BY id ASC LIMIT 10');
 
+        $result = $db->query('');
+
         $i = 0;
         while($row = $result->fetch()) {
             $newsList[$i]['id'] = $row['id'];

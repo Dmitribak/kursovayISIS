@@ -4,13 +4,33 @@ class Db
 {
     public static function getConnection()
     {
-        $paramsPath = ROOT . '/config/db_params.php';
-        $params = include($paramsPath);
+        try {
+            $paramsPath = ROOT . '/config/db_params.php';
+            $params = include($paramsPath);
 
 
-        $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
-        $db = new PDO($dsn, $params['user'], $params['password']);
+            $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
+            $db = new PDO($dsn, $params['user'], $params['password'], array(
+                PDO::ATTR_PERSISTENT => true));
 
-        return $db;
+            $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $db->exec("set names utf8");
+
+            return $db;
+        }
+        catch(PDOException $e) {
+            echo $e->getMessage();
+        }
+    }
+
+    public static function closeConnection()
+    {
+        $db = null;
+    }
+
+    public static function insertDb($db, $which_table)
+    {
+        $stmt = $db->prepare("INSERT INTO '.$which_table.' (firstname, lastname, email) VALUES (:firstname, :lastname, :email)");
+        $stmt->execute();
     }
 }

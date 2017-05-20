@@ -1,7 +1,7 @@
 CREATE TABLE `afisha` (
 	`id_events` INT(10) NOT NULL AUTO_INCREMENT,
     `title_events` varchar(100) NOT NULL,
-    `category_events` varchar(255) NOT NULL,
+    `id_category_events` INT(10) FOREIGN KEY REFERENCES category_events(id_category),
     `short_text_events` varchar(255) NOT NULL,
     `full_text_events` TEXT NOT NULL,
     `date_events` DATETIME NOT NULL,
@@ -9,6 +9,12 @@ CREATE TABLE `afisha` (
     `img_events` TEXT,
 PRIMARY KEY(`id_events`)
 );
+
+CREATE TABLE `category_events` (
+  `id_category` INT(10) NOT NULL AUTO_INCREMENT,
+  `category` VARCHAR(255) NOT NULL,
+  PRIMARY KEY(`id_category`)
+)
 
 CREATE TABLE `image_home_page` (
   `id_picture` INT(5) NOT NULL,
