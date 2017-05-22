@@ -10,8 +10,7 @@ class Db
 
 
             $dsn = "mysql:host={$params['host']};dbname={$params['dbname']}";
-            $db = new PDO($dsn, $params['user'], $params['password'], array(
-                PDO::ATTR_PERSISTENT => true));
+            $db = new PDO($dsn, $params['user'], $params['password']);
 
             $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $db->exec("set names utf8");
@@ -26,11 +25,5 @@ class Db
     public static function closeConnection()
     {
         $db = null;
-    }
-
-    public static function insertDb($db, $which_table)
-    {
-        $stmt = $db->prepare("INSERT INTO '.$which_table.' (firstname, lastname, email) VALUES (:firstname, :lastname, :email)");
-        $stmt->execute();
     }
 }

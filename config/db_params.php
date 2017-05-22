@@ -1,7 +1,7 @@
 <?php
 return array(
     'host' => 'localhost',
-    'dbname' => 'php_base',
+    'dbname' => 'kursovik',
     'user' => 'root',
     'password' => '',
 );
