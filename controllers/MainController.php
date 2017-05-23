@@ -11,6 +11,9 @@ class MainController
         $eventsList = array();
         $eventsList = Afisha::getEventsList();
 
+        $sliders_main = array();
+        $sliders_main = Main::sliderMain();
+
         require_once(ROOT . '/views/site/index.php');
 
         return true;

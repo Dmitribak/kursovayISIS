@@ -7,33 +7,23 @@
             <div class="banner">
                 <div  class="callbacks_container">
                     <ul class="rslides" id="slider4">
+
+                        <?php foreach ($sliders_main as $id):?>
                         <li>
-                            <img src="template/site/images/1.jpg" class="img-responsive" alt="" />
-
+<?php
+// TODO: Проблемма с циклом.
+?>
+                            <img src='<?php echo $sliders_main['url_picture'];?>' class="img-responsive" alt="">
                         </li>
-                        <li>
-                            <img src="template/site/images/2.jpg" class="img-responsive" alt="" />
-
-
-                        </li>
-                        <li>
-                            <img src="template/site/images/3.jpg" class="img-responsive" alt="" />
-
-
-                        </li>
-                        <li>
-                            <img src="template/site/images/3.jpg" class="img-responsive" alt="" />
-
-
-                        </li>
+                        <?php endforeach;?>
                     </ul>
                 </div>
-                <!--banner-->
+
+
+
                 <script src="template/site/js/responsiveslides.min.js"></script>
                 <script>
-                    // You can also use "$(window).load(function() {"
                     $(function () {
-                        // Slideshow 4
                         $("#slider4").responsiveSlides({
                             auto: true,
                             pager:true,
@@ -50,44 +40,21 @@
 
                     });
                 </script>
-                <div class="clearfix"> </div>
-                <div class="b-bottom">
-                    <h5 class="top"><a href="single.html">What turn out consetetur sadipscing elit</a></h5>
-                    <p>On Aug 25 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
+                <div class="b-bottom"><?php
+                // TODO: Реализовать отдельную страницу для вкладки контакты
+                    ?>
+                    <h5 class="top"><a href="single.html">Наш театр</a></h5>
                 </div>
             </div>
-            <!--//banner-->
-            <!--/top-news-->
-            <div class="top-news">
+            <div class="top-news"><br>
+                <h3 class="tittle">Главные новости  <i class="glyphicon glyphicon-time"></i></h3>
                 <div class="top-inner">
-                    <div class="col-md-6 top-text">
+                    <div class="col-md-12 top-text">
                         <a href="single.html"><img src="template/site/images/pic1.jpg" class="img-responsive" alt=""></a>
                         <h5 class="top"><a href="single.html">Consetetur sadipscing elit</a></h5>
                         <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna aliquyam eratsed diam justo duo dolores rebum.</p>
                         <p>On Jun 25 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
                     </div>
-                    <div class="col-md-6 top-text two">
-                        <a href="single.html"><img src="template/site/images/pic2.jpg" class="img-responsive" alt=""></a>
-                        <h5 class="top"><a href="single.html">Consetetur sadipscing elit</a></h5>
-                        <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna aliquyam eratsed diam justo duo dolores rebum.</p>
-                        <p>On Jun 27 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                <div class="top-inner second">
-                    <div class="col-md-6 top-text">
-                        <a href="single.html"><img src="template/site/images/pic3.jpg" class="img-responsive" alt=""></a>
-                        <h5 class="top"><a href="single.html">Consetetur sadipscing elit</a></h5>
-                        <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna aliquyam eratsed diam justo duo dolores rebum.</p>
-                        <p>On Jun 25 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
-                    </div>
-                    <div class="col-md-6 top-text two">
-                        <a href="single.html"><img src="template/site/images/pic4.jpg" class="img-responsive" alt=""></a>
-                        <h5 class="top"><a href="single.html">Consetetur sadipscing elit</a></h5>
-                        <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labore dolore magna aliquyam eratsed diam justo duo dolores rebum.</p>
-                        <p>On Jun 27 <a class="span_link" href="#"><span class="glyphicon glyphicon-comment"></span>0 </a><a class="span_link" href="#"><span class="glyphicon glyphicon-eye-open"></span>56 </a><a class="span_link" href="single.html"><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
-                    </div>
-                    <div class="clearfix"> </div>
                 </div>
             </div>
         </div>
@@ -100,7 +67,7 @@
                     <div class="general-text">
                         <b><h5 class="top"><a href='/afisha/<?php echo $eventsItem['id_events'];?>'><?php echo $eventsItem['title'];?></a></h5></b>
                         <p><b><?php echo $eventsItem['category'];?></b></p>
-                        <a href="single.html"><img src='<?php echo $eventsItem['img_events'];?>' class="img-responsive" alt=""></a>
+                        <a href='/afisha/<?php echo $eventsItem['id_events'];?>'><img src='<?php echo $eventsItem['img_events'];?>' class="img-responsive" alt=""></a>
                         <p><?php echo $eventsItem['short_text'];?></p>
                         <p><?php echo $eventsItem['date_events'];?><a class="span_link"><span class="glyphicon glyphicon-eye-open"></span><?php echo $eventsItem['count_views_events'];?></a><a class="span_link" href='/afisha/<?php echo $eventsItem['id_events'];?>''><span class="glyphicon glyphicon-circle-arrow-right"></span></a></p>
                     </div>

@@ -60,3 +60,22 @@ CREATE TABLE `events_actors_all` (
   FOREIGN KEY (id_actors_main) REFERENCES actors(id_actors),
   FOREIGN KEY (id_actors_double) REFERENCES actors(id_actors),
 );
+
+
+CREATE TABLE `news_category` (
+  `id_categorii` INT(10) NOT NULL AUTO_INCREMENT,
+  `news_categor` VARCHAR(255) NOT NULL,
+  PRIMARY KEY(`id_categorii`)
+);
+
+CREATE TABLE `news` (
+  `id_news` INT(10) NOT NULL AUTO_INCREMENT,
+  `id_category` INT(10) NOT NULL,
+  `title_news` VARCHAR(255) NOT NULL,
+  `discription_news` VARCHAR(255) NOT NULL,
+  `date_news_public` DATETIME NOT NULL,
+  `count_view_news` INT,
+  `img_url_news` VARCHAR(255),
+  PRIMARY KEY(`id_news`),
+  FOREIGN KEY (id_category) REFERENCES news_category(id_categorii)
+);
