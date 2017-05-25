@@ -79,3 +79,16 @@ CREATE TABLE `news` (
   PRIMARY KEY(`id_news`),
   FOREIGN KEY (id_category) REFERENCES news_category(id_categorii)
 );
+
+CREATE TABLE `news_tags_all` (
+  `id_tag` INT(10) NOT NULL AUTO_INCREMENT,
+  `teg` VARCHAR(255) NOT NULL,
+  PRIMARY KEY(`id_tag`),
+);
+
+CREATE TABLE `news_tags` (
+  `id_news` INT(10) NOT NULL,
+  `id_tag` INT(10) NOT NULL,
+  FOREIGN KEY (id_news) REFERENCES news(id_news),
+  FOREIGN KEY (id_tag) REFERENCES news_tags_all(id_tag)
+);

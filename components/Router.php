@@ -45,6 +45,7 @@ class Router
                 if (file_exists($controllerFile)) {
                     include_once($controllerFile);
                 }
+// TODO: разобраться с 404 ошибкой, настроить на переадресацию
 
                 $controllerObject = new $controllerName;
                 $result = call_user_func_array(array($controllerObject, $actionName), $parameters);

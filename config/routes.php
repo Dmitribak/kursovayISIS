@@ -5,6 +5,7 @@ return array(
     'news' => 'news/index',
     'afisha/([0-9]+)' => 'afisha/view/$1',
     'afisha' => 'afisha/index',
+    'user/register' => 'user/register',
 
     'main' => 'main/index',
     '' => 'main/index',
