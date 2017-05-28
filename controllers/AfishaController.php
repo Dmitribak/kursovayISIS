@@ -10,7 +10,7 @@ class AfishaController
         $eventsList = array();
         $eventsList = Afisha::getEventsList();
 
-        require_once(ROOT . '/views/site/afisha/index.php');
+        require_once(ROOT . '/views/site/index.php');
 
         return true;
     }

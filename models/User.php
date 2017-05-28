@@ -18,7 +18,7 @@ class User
     }
 
     /**
-     * Проверяет имя: не меньше, чем 2 символа
+     * //Проверяет имя: не меньше, чем 2 символа
      */
     public static function checkName($name) {
         if (strlen($name) >= 2) {
@@ -61,4 +61,5 @@ class User
             return true;
         return false;
     }
+
 }
