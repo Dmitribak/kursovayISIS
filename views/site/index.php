@@ -1,3 +1,4 @@
+
 <?php require_once 'header.php' ?>
 
 <div class="banner">
@@ -57,6 +58,22 @@
         <div class="mag-inner">
             <div class="col-md-8 mag-innert-left">
                 <!--/start-Technology-->
+                <div class="business">
+                    <h3 class="tittle"><i class="glyphicon glyphicon-briefcase"></i>Новости</h3>
+                    <div class="business-inner">
+                        <div class="col-md-6 b-img"><a href="single.html"><img class="img-responsive" src="/template/site/images/time.jpg" alt=""/></a></div>
+                        <div class="col-md-6 b-text">
+                            <h5><a href="single.html">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN OCTOBER</a></h5>
+                            <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
+                            <div class="clearfix"></div>
+                            <p>When work interferes with life,in life can result in employees getting burned out and decreases base morale in the office employees getting burned out and decreases it When work interferes with life can result.</p>
+                            <a class="read" href="single.html">Read More</a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+
                 <div class="technology">
                     <h2 class="tittle"><i class="glyphicon glyphicon-certificate"> </i>Technology</h2>
                     <div class="col-md-6 tech-img">
@@ -212,81 +229,6 @@
 
                 </div>
                 <!--business-->
-                <div class="business">
-                    <h3 class="tittle"><i class="glyphicon glyphicon-briefcase"></i>Business</h3>
-                    <div class="business-inner">
-                        <div class="col-md-6 b-img"><a href="single.html"><img class="img-responsive" src="/template/site/images/time.jpg" alt=""/></a></div>
-                        <div class="col-md-6 b-text">
-                            <h5><a href="single.html">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN OCTOBER</a></h5>
-                            <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
-                            <div class="clearfix"></div>
-                            <p>When work interferes with life,in life can result in employees getting burned out and decreases base morale in the office employees getting burned out and decreases it When work interferes with life can result.</p>
-                            <a class="read" href="single.html">Read More</a>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="business-bottom-content">
-                            <div class="col-md-6 business-bottom">
-                                <div class="col-md-3 b-bottom-pic">
-                                    <a href="single.html"><img class="img-responsive" src="/template/site/images/ti1.jpg" alt=""/></a>
-                                </div>
-                                <div class="col-md-9 b-bottom-text">
-                                    <h5><a href="single.html"> NOW IS THE TIME TO CHANGE WORK</a></h5>
-                                    <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-6 business-bottom">
-                                <div class="col-md-3 b-bottom-pic">
-                                    <a href="single.html"><img class="img-responsive" src="/template/site/images/ti1.jpg" alt=""/></a>
-                                </div>
-                                <div class="col-md-9 b-bottom-text">
-                                    <h5><a href="single.html"> NOW IS THE TIME TO CHANGE WORK</a></h5>
-                                    <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="business-inner two">
-                        <div class="col-md-6 b-img"><a href="single.html"><img class="img-responsive" src="/template/site/images/time2.jpg" alt=""/></a></div>
-                        <div class="col-md-6 b-text">
-                            <h5><a href="single.html">PEBBLE TIME STEEL IS ON TRACK TO SHIP IN OCTOBER</a></h5>
-                            <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
-                            <div class="clearfix"></div>
-                            <p>When work interferes with life,in employees getting life can result in out and decreases base morale in the office burned out and decreases it When work interferes with life can result in employees getting burned..</p>
-                            <a class="read" href="single.html">Read More</a>
-                        </div>
-                        <div class="clearfix"></div>
-                        <div class="business-bottom-content">
-                            <div class="col-md-6 business-bottom">
-                                <div class="col-md-3 b-bottom-pic">
-                                    <a href="single.html"><img class="img-responsive" src="/template/site/images/ti1.jpg" alt=""/></a>
-                                </div>
-                                <div class="col-md-9 b-bottom-text">
-                                    <h5><a href="single.html"> NOW IS THE TIME TO CHANGE WORK</a></h5>
-                                    <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="col-md-6 business-bottom">
-                                <div class="col-md-3 b-bottom-pic">
-                                    <a href="single.html"><img class="img-responsive" src="/template/site/images/ti1.jpg" alt=""/></a>
-                                </div>
-                                <div class="col-md-9 b-bottom-text">
-                                    <h5><a href="single.html"> NOW IS THE TIME TO CHANGE WORK</a></h5>
-                                    <h6><i class="glyphicon glyphicon-time"></i>Jun 25, 2015</h6> <div class="icons"><a href="#"><i class="glyphicon glyphicon-user"></i>Admin</a><a href="#"><i class="glyphicon glyphicon-comment"></i>2</a><a href="#"><i class="glyphicon glyphicon-thumbs-up"></i>152</a><a href="#"><i class="glyphicon glyphicon-thumbs-down"></i> 26</a></div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="clearfix"></div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                </div>
                 <!--//business-->
                 <!--//latest-articles-->
                 <div class="latest-articles">
@@ -320,13 +262,13 @@
                     <h4 class="side">Афиша  <i class="glyphicon glyphicon-list-alt"></i></h4>
                     <div class="top-inner">
                         <?php foreach ($eventsList as $eventsItem):?>
-                        <div class="top-text">
-                            <a href="/afisha/<?php echo $eventsItem['id_events'];?>"><img src="<?php echo $eventsItem['img_events'];?>" class="img-responsive" alt=""/></a>
-                            <h5 class="top"><a href="/afisha/<?php echo $eventsItem['id_events'];?>"><?php echo $eventsItem['title'];?></a></h5>
-                            <p><?php echo $eventsItem['short_text'];?></p>
-                            <div class="td-post-date two"><i class="glyphicon glyphicon-time"></i><?php echo $eventsItem['date_events'];?>    <a class="span_link"><span class="glyphicon glyphicon-eye-open"></span>     <?php echo $eventsItem['count_views_events'];?></a></div>
-                            <hr>
-                        </div>
+                            <div class="top-text">
+                                <a href="/afisha/<?php echo $eventsItem['id_events'];?>"><img src="<?php echo $eventsItem['img_events'];?>" class="img-responsive" alt=""/></a>
+                                <h5 class="top"><a href="/afisha/<?php echo $eventsItem['id_events'];?>"><?php echo $eventsItem['title'];?></a></h5>
+                                <p><?php echo $eventsItem['short_text'];?></p>
+                                <div class="td-post-date two"><i class="glyphicon glyphicon-time"></i><?php echo $eventsItem['date_events'];?>    <a class="span_link"><span class="glyphicon glyphicon-eye-open"></span>     <?php echo $eventsItem['count_views_events'];?></a></div>
+                                <hr>
+                            </div>
                         <?php endforeach;?>
                     </div>
                 </div>
@@ -449,4 +391,3 @@
 </div>
 
 <?php require_once 'footer.php'?>
-

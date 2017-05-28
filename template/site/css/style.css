@@ -831,8 +831,11 @@ a.read {
     margin-bottom: 1em;
     font-weight: bold;
 }
+.technology {
+	margin-top: 5em;
+}
 .business {
-    margin-top: 5em;
+    margin-top: 0em;
 }
 /*--business-bottom --*/
 .business-bottom {

@@ -1,5 +1,5 @@
 <div class="copyright">
-    <p>&copy; 2017 Dmitribak <a href="vk.com/ribak">  ВК</a> </p>
+    <p>&copy; 2017 Dmitribak <a href="http://vk.com/ribak">  ВК</a> </p>
 </div>
 
 <script type="text/javascript">
