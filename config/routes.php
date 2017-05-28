@@ -6,7 +6,7 @@ return array(
     'afisha/([0-9]+)' => 'afisha/view/$1',
     'afisha' => 'afisha/index',
     'user/register' => 'user/register',
-
+    'user/forgot' => 'user/forgot',
     'main' => 'main/index',
     '' => 'main/index',
 );

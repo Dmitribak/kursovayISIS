@@ -1,4 +1,4 @@
-<?php include_once 'header.php'?>
+<?php require_once(ROOT . '/views/site/header.php'); ?>
 
     <div class="banner two">
         <div class="container">
@@ -47,7 +47,7 @@
             <div class="col-md-6 account-left second">
                 <form>
                     <div class="account-top heading">
-                        <h3>Форма входа</h3>
+                        <h3>Форма входа</h3><br>
                     </div>
                     <div class="address">
                         <span>Логин или Email:</span>
@@ -58,7 +58,7 @@
                         <input type="password">
                     </div>
                     <div class="address">
-                        <a class="forgot" href="#">Забыли пароль?</a>
+                        <a class="forgot" href="/user/forgot">Забыли пароль?</a>
                         <input type="submit" value="Вход">
                     </div>
                 </form>
@@ -68,4 +68,4 @@
     </div>
 </div>
 
-<?php require_once 'footer.php'?>
+<?php require_once(ROOT . '/views/site/footer.php'); ?>

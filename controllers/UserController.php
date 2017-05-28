@@ -39,9 +39,29 @@ class UserController
         }
 
 
-        require_once(ROOT . '/views/site/register.php');
+        require_once(ROOT . '/views/site/authorization/register.php');
 
         return true;
     }
 
+    public function actionForgot()
+    {
+        $email = '';
+
+        if (isset($_POST['submit'])) {
+            $email = $_POST['email'];
+
+            $errors = false;
+
+            if (!User::checkEmailExists($email)) {
+                $errors[] = 'Данный Email не существует';
+            }
+            //TODO: + функция отправкисообщения пользователю
+        }
+
+
+        require_once(ROOT . '/views/site/authorization/forgot_password.php');
+
+        return true;
+    }
 }
