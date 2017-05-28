@@ -1,5 +1,4 @@
-
-<?php require_once 'header.php' ?>
+<?php require_once(ROOT . '/views/site/header.php'); ?>
 
 <div class="banner">
     <div class="container">
@@ -390,4 +389,4 @@
     </div>
 </div>
 
-<?php require_once 'footer.php'?>
+<?php require_once(ROOT . '/views/site/footer.php'); ?>

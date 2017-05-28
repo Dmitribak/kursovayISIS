@@ -38,8 +38,8 @@
                         <li><a href="/">Новости</a></li>
                         <li><a href="/">Актёры</a></li>
                         <li><a href="/">Главная</a></li>
-
-                        <li><a href="/user/register">Мой аккаунт</a></li>
+                        <li><a href="/user/login">Вход</a></li>
+                        <li><a href="/user/register">Регистрация</a></li>
                     </ul>
                 </div>
             </div>

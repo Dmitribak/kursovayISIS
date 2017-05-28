@@ -24,7 +24,7 @@
         <div class="container">
             <div class="account-bottom">
                 <div class="col-md-6 account-left">
-                    <form>
+                    <form action="#" method="post">
                         <div class="account-top heading">
                             <h3>Воостановление пароля : </h3>
                         </div>
