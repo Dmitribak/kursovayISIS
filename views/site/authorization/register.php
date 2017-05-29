@@ -74,7 +74,7 @@
                     <span id="statuspas"></span>
                     <div class="address">
                         <span>Повторите пароль *:</span>
-                        <input type="password" name="passwordcheck" value="<?php echo $password; ?>">
+                        <input type="password" name="passwordconfim" value="<?php echo $passwordconfim; ?>">
                     </div>
                     <div class="address new">
                         <input type="submit" name="submit" value="Зарегистрироваться"">

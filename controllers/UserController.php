@@ -10,6 +10,7 @@ class UserController
         $email = false;
         $password = false;
         $result = false;
+        $passwordconfim = false;
 
         if (isset($_POST['submit'])) {
             $login = $_POST['login'];
@@ -18,6 +19,7 @@ class UserController
             $name = $_POST['name'];
             $surname = $_POST['surname'];
             $today = date("Y-m-d H:i:s");
+            $passwordconfim = $_POST['passwordconfim'];
 
             $errors = false;
 
@@ -31,6 +33,10 @@ class UserController
 
             if (!User::checkPassword($password, 1)) {
                 $errors[] = 'Пароль не должен быть короче 1-ти символов';
+            }
+
+            if (!User::checkPass($password, $passwordconfim)){
+                $errors[] = 'Пароли должны совпадать';
             }
 
             if (User::checkEmailExists($email)) {

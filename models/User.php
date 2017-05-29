@@ -2,14 +2,14 @@
 
 class User
 {
-    public static function register($login, $password, $email, $today, $name, $surname)
+    public static function register($login, $password, $email, $today, $name = 'NULL', $surname = 'NULL', $role = 1)
     {
         // Соединение с БД
         $db = Db::getConnection();
 
         // Текст запроса к БД
-        $sql = 'INSERT INTO users (login_users, password, email_users, date_registration_users, name_users, family_users) '
-            . 'VALUES (:login, :password, :email, :date, :name, :family)';
+        $sql = 'INSERT INTO users (login_users, password_users, email_users, date_registration_users, name_users, family_users, role_users)'
+            . 'VALUES (:login, :password, :email, :date, :name, :family, :role_users)';
 
         // Получение и возврат результатов. Используется подготовленный запрос
         $result = $db->prepare($sql);
@@ -19,6 +19,7 @@ class User
         $result->bindParam(':date', $today, PDO::PARAM_STR);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
         $result->bindParam(':family', $surname, PDO::PARAM_STR);
+        $result->bindParam(':role_users', $role, PDO::PARAM_STR);
         return $result->execute();
     }
     public static function edit($id, $name, $password)
@@ -157,4 +158,8 @@ class User
         return $result->fetch();
     }
 
+    public static function checkPass($pas1, $pas2) {
+        if ($pas1 === $pas2) return true;
+            else return false;
+    }
 }

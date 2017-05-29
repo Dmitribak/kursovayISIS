@@ -13,8 +13,8 @@
                             <img src='<?php echo $eventsItem['img_events'] ?>'>
                             <p class="text"><?php echo $eventsItem['full_text']; ?></p>
 
-                            <a href="/afisha/<?php echo $eventsItem['id_category_events']; ?>"><?php echo $eventsItem['category']; ?></a>
-                            <?php echo $eventsItem['date_events']; ?>
+                            <a href="/afisha/<?php echo $eventsItem['category']; ?>"><?php echo $eventsItem['category']; ?></a>
+                               <?php echo $eventsItem['date_events']; ?>
 <!--                                    <li><a href="#">5 Comments</a></li>-->
 
                             <hr><br>
@@ -24,6 +24,21 @@
                     </div>
                 </div>
                 <div class="col-md-4 mag-inner-right">
+                    <div class="top-news">
+                        <h4 class="side">Фильтр  <i class="glyphicon glyphicon-random"></i></h4>
+                        <div class="top-inner">
+                            <?php foreach ($eventsList as $eventsItem):?>
+                                <div class="top-text">
+                                    <a href="/afisha/<?php echo $eventsItem['id_events'];?>"><img src="<?php echo $eventsItem['img_events'];?>" class="img-responsive" alt=""/></a>
+                                    <h5 class="top"><a href="/afisha/<?php echo $eventsItem['id_events'];?>"><?php echo $eventsItem['title'];?></a></h5>
+                                    <p><?php echo $eventsItem['short_text'];?></p>
+                                    <div class="td-post-date two"><i class="glyphicon glyphicon-time"></i><?php echo $eventsItem['date_events'];?>    <a class="span_link"><span class="glyphicon glyphicon-eye-open"></span>     <?php echo $eventsItem['count_views_events'];?></a></div>
+                                    <a class="span_link" href='/afisha/<?php echo $eventsItem['id_events'];?>'><span class="glyphicon glyphicon-circle-arrow-right"></span></a>
+                                    <hr>
+                                </div>
+                            <?php endforeach;?>
+                        </div>
+                    </div>
                     <div class="sign_main">
                         <h4 class="side">Авторизация</h4>
                         <div class="sign_up">

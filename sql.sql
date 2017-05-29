@@ -92,6 +92,7 @@ CREATE TABLE `users_category` (
 CREATE TABLE `users` (
   `id_users` INT NOT NULL AUTO_INCREMENT,
   `login_users` VARCHAR(255) NOT NULL,
+  `password_users` VARCHAR(255) NOT NULL,
   `name_users` VARCHAR(255),
   `family_users` VARCHAR(255),
   `email_users` VARCHAR(255) NOT NULL,

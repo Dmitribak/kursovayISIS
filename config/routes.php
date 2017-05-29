@@ -14,7 +14,11 @@ return array(
     'user/logout' => 'user/logout',
     'user/forgot' => 'user/forgot',
 
+//Админка
+    'admin' => 'admin/index',
 
+
+//Остатки
     'main' => 'main/index',
     '' => 'main/index',
 );
