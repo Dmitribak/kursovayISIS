@@ -35,7 +35,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="/">Главная</a></li>
-                        <li><a href="/">Новости</a></li>
+                        <li><a href="/afisha/all">Афиша</a></li>
                         <li><a href="/">Актёры</a></li>
                         <li><a href="/">Главная</a></li>
                         <li><a href="/user/login">Вход</a></li>

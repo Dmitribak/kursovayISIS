@@ -1,8 +1,6 @@
 <?php
 
-include_once ROOT. '/models/Afisha.php';
-
-class AfishaController
+class NewsController
 {
     public function actionIndex()
     {
@@ -22,17 +20,6 @@ class AfishaController
 
             require_once(ROOT . '/views/site/afisha/view.php');
         }
-
-        return true;
-
-    }
-
-    public function actionAllevents()
-    {
-        $eventsAll = array();
-        $eventsAll = Afisha::getEventsAll();
-
-            require_once(ROOT . '/views/site/afisha/eventsall.php');
 
         return true;
 

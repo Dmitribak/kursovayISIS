@@ -3,6 +3,8 @@ return array(
 
     'news/([0-9]+)' => 'news/view/$1',
     'news' => 'news/index',
+//Работа с афишей
+    'afisha/all' => 'afisha/allevents',
     'afisha/([0-9]+)' => 'afisha/view/$1',
     'afisha' => 'afisha/index',
 
