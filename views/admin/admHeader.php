@@ -51,6 +51,48 @@
                     <li>
                         <a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>Главная</a>
                     </li>
+                    <li class="">
+                        <a href="#"><i class="fa fa-table nav_icon"></i>Афиша <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">Категории событий</a>
+                            </li>
+                            <li>
+                                <a href="#">Добавление события</a>
+                            </li>
+                            <li>
+                                <a href="#">Категории <span class="nav-badge">12</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#"><i class="fa fa-table nav_icon"></i>Новости <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">Категории новостей</a>
+                            </li>
+                            <li>
+                                <a href="#">Добавление новости</a>
+                            </li>
+                            <li>
+                                <a href="#">Категории <span class="nav-badge">12</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a href="#"><i class="fa fa-th-large nav_icon"></i>Сотрудники театра <span class="nav-badge">12</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li>
+                                <a href="#">Актёры<span class="nav-badge">12</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Обслуживающий персонал<span class="nav-badge">12</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Категории сотрудников<span class="nav-badge">12</span></a>
+                            </li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="#"><i class="fa fa-cogs nav_icon"></i>Components <span class="nav-badge">12</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
@@ -64,7 +106,7 @@
                         <!-- /nav-second-level -->
                     </li>
                     <li class="">
-                        <a href="#"><i class="fa fa-book nav_icon"></i>UI Elements <span class="fa arrow"></span></a>
+                        <a href="#"><i class="fa fa-table nav_icon"></i>Афиша <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
                                 <a href="general.html">General<span class="nav-badge-btm">08</span></a>
