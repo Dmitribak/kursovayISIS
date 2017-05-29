@@ -54,18 +54,19 @@ class User
 
         // Обращаемся к записи
         $user = $result->fetch();
-//TODO: продолжение
+
         if ($user) {
             // Если запись существует, возвращаем id пользователя
-            return $user['id'];
+            return array($user['id_users'], $user['role']);
         }
         return false;
     }
 //Запоминаем пользователя
-    public static function auth($userId)
+    public static function auth($userId, $role)
     {
         // Записываем идентификатор пользователя в сессию
         $_SESSION['user'] = $userId;
+        $_SESSION['role'] = $role;
     }
 //Возвращает идентификатор пользователя, если он авторизирован.
 //Иначе перенаправляет на страницу входа
@@ -82,6 +83,14 @@ class User
     public static function isGuest()
     {
         if (isset($_SESSION['user'])) {
+            return false;
+        }
+        return true;
+    }
+// TODO: !!!!
+    public static function isEditor()
+    {
+        if (isset($_SESSION[''])) {
             return false;
         }
         return true;

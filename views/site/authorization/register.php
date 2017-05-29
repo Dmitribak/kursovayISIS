@@ -12,19 +12,18 @@
         function isEmpty(str){
             return (str == null) || (str.length == 0);
         }
-    </script>
-
-    <script>
-        function pass() {
-            var pas1 = document.getElementById("pas1").value;
-            var pas2 = document.getElementById("pas2").value;
-            var status = document.getElementById("statuspas");
-            if (pas1===pas2) status.innerHTML = "";
-            else status.innerHTML = "Пароли не совпадают";
-            if (isEmpty(pas1)) status.innerHTML = "Поле пустое";
+        function checkpas() {
+            document.addEventListener('DOMContentLoaded', function () {
+                var pass1 = document.querySelector('#password'),
+                    pass2 = document.querySelector('#passwordcheck')
+                pass1.addEventListener('input', function () {
+                    this.value != pass2.value ? pass2.setCustomValidity('Пароли разные') : pass2.setCustomValidity('')
+                })
+                pass2.addEventListener('input', function (e) {
+                    this.value != pass1.value ? this.setCustomValidity('Пароли разные') : this.setCustomValidity('')
+                })
+            })
         }
-
-
     </script>
 
     <div class="banner two">
@@ -40,10 +39,10 @@
                 <?php if ($result): ?>
                     <p>Вы зарегистрированы!</p>
                 <?php else: ?>
-                    <?php if (isset($errorss) && is_array($errorss)): ?>
+                    <?php if (isset($errors) && is_array($errors)): ?>
                         <ul>
-                            <?php foreach ($errorss as $errorw): ?>
-                                <li> - <?php echo $errorw; ?></li>
+                            <?php foreach ($errors as $error): ?>
+                                <li> - <?php echo $error; ?></li>
                             <?php endforeach; ?>
                         </ul>
                     <?php endif; ?>
@@ -70,15 +69,19 @@
                     </div>
                     <div class="address">
                         <span>Пароль *:</span>
-                        <input type="password" name="password" id="pas1" value="<?php echo $password; ?>">
+                        <input type="password" name="password"  value="<?php echo $password; ?>">
                     </div>
                     <span id="statuspas"></span>
                     <div class="address">
                         <span>Повторите пароль *:</span>
-                        <input type="password" id="pas2" value="<?php echo $password; ?>">
+                        <input type="password" name="passwordcheck" value="<?php echo $password; ?>">
                     </div>
                     <div class="address new">
-                        <input type="submit" name="submit" value="Зарегистрироваться">
+                        <input type="submit" name="submit" value="Зарегистрироваться"">
+                        <?php
+                        //TODO: Доделать JQuery
+                        ?>
+
                     </div>
                 </form>
                 <?php endif; ?>

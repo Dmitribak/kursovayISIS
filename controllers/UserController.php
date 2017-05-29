@@ -22,13 +22,7 @@ class UserController
             $errors = false;
 
             if (!User::checkName($login, 1)) {
-                $errors[] = 'Логин не должен быть короче 5-х символов';
-            }
-            if (!User::checkName($name, 1)) {
-                $errors[] = 'Имя не должно быть короче 2-х символов';
-            }
-            if (!User::checkName($surname, 1)) {
-                $errors[] = 'Фамилия не должна быть короче 3-х символов';
+                $errors[] = 'Логин не должен быть короче 1-х символов';
             }
 
             if (!User::checkEmail($email)) {
@@ -36,7 +30,7 @@ class UserController
             }
 
             if (!User::checkPassword($password, 1)) {
-                $errors[] = 'Пароль не должен быть короче 6-ти символов';
+                $errors[] = 'Пароль не должен быть короче 1-ти символов';
             }
 
             if (User::checkEmailExists($email)) {
@@ -87,7 +81,7 @@ class UserController
             // Если форма отправлена
             // Получаем данные из формы
             $email = $_POST['email'];
-            $password = $_POST['passwor'];
+            $password = $_POST['password'];
 
             // Флаг ошибок
             $errors = false;
@@ -102,6 +96,9 @@ class UserController
 
             // Проверяем существует ли пользователь
             $userId = User::checkUserData($email, $password);
+            $role = $userId[1];
+
+            print_r($userId);
 
             if ($userId == false) {
                 // Если данные неправильные - показываем ошибку
@@ -109,9 +106,9 @@ class UserController
             } else {
                 // Если данные правильные, запоминаем пользователя (сессия)
                 User::auth($userId);
-
-/*                // Перенаправляем пользователя в закрытую часть - кабинет
-                header("Location: /cabinet");*/
+                echo "ВЫ авторизованны, спасибо";
+//              //Перенаправляем пользователя в закрытую часть - кабинет
+//                header("Location: /cabinet");
             }
         }
 

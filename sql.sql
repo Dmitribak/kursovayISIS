@@ -26,18 +26,6 @@ CREATE TABLE `home_page_image` (
   PRIMARY KEY(`id_picture`)
 );
 
-//Таблица пользователей
-CREATE TABLE `users` (
-  `id_users` INT NOT NULL AUTO_INCREMENT,
-  `login_users` VARCHAR(255) NOT NULL,
-  `name_users` VARCHAR(255),
-  `family_users` VARCHAR(255),
-  `email_users` VARCHAR(255) NOT NULL,
-  `check_email_users` BOOLEAN,
-  `date_registration_users` DATETIME NOT NULL,
-  PRIMARY KEY(`id_users`)
-);
-
 //Таблица актёров
 CREATE TABLE `actors` (
   `id_actors` INT(10) NOT NULL AUTO_INCREMENT,
@@ -91,4 +79,25 @@ CREATE TABLE `news_tags` (
   `id_tag` INT(10) NOT NULL,
   FOREIGN KEY (id_news) REFERENCES news(id_news),
   FOREIGN KEY (id_tag) REFERENCES news_tags_all(id_tag)
+);
+
+//Категория пользователей
+CREATE TABLE `users_category` (
+`id_category` INT(10) NOT NULL AUTO_INCREMENT,
+ `category` VARCHAR(255) NOT NULL,
+ PRIMARY KEY (`id_category`)
+);
+
+//Таблица пользователей
+CREATE TABLE `users` (
+  `id_users` INT NOT NULL AUTO_INCREMENT,
+  `login_users` VARCHAR(255) NOT NULL,
+  `name_users` VARCHAR(255),
+  `family_users` VARCHAR(255),
+  `email_users` VARCHAR(255) NOT NULL,
+  `check_email_users` BOOLEAN,
+  `date_registration_users` DATETIME NOT NULL,
+  `role_users` INT NOT NULL,
+  PRIMARY KEY(`id_users`)
+  FOREIGN KEY (role_users) REFERENCES users_category(id_category)
 );

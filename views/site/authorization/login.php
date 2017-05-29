@@ -40,7 +40,7 @@
         </div>
         <div class="address">
             <span>Пароль:</span>
-            <input type="password" name="passwor" value="<?php echo $password; ?>">
+            <input type="password" name="password" value="<?php echo $password; ?>">
         </div>
         <div class="address">
             <a class="forgot" href="/user/forgot">Забыли пароль?</a>
