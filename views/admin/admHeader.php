@@ -49,13 +49,16 @@
             <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="index.html" class="active"><i class="fa fa-home nav_icon"></i>Главная</a>
+                        <a href="/admin" class="active"><i class="fa fa-home nav_icon"></i>Главная</a>
                     </li>
                     <li class="">
                         <a href="#"><i class="fa fa-table nav_icon"></i>Афиша <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
                                 <a href="/admin/afishacategory">Категории событий</a>
+                            </li>
+                            <li>
+                                <a href="/admin/afishacategorycreate">Добавление категории</a>
                             </li>
                             <li>
                                 <a href="/admin/afishaedit">Добавление события</a>

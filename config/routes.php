@@ -11,10 +11,11 @@ return array(
     'user/forgot' => 'user/forgot',
 
 //Админка
+    'admin/afishacategory/delete/([0-9]+)' => 'admin/categoryDelete/$1',
     'admin/afishacategory'=> 'admin/afishacategory',
     'admin/afishaedit' => 'admin/afishaedit',
     'admin' => 'admin/index',
-
+    'admin/afishacategorycreate' => 'admin/afishacategorycreate',
 //Остатки
     'main' => 'main/index',
     '' => 'main/index',

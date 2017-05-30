@@ -60,24 +60,35 @@ class Afisha
         }
         return $eventsAll;
     }
-    public static function getCategory()
+    public static function getCategory($id=1 )
     {
         // Соединение с БД
         $db = Db::getConnection();
-        $sql = 'SELECT * FROM events_category';
+        $sql = 'SELECT * FROM events_category WHERE id_category = (:id)';
 
-        $eventsAll = array();
-        $result = $db->query($sql);
-
-        $i = 0;
+        $result = $db->prepare($sql);
+        $result->bindParam(':id', $id,PDO::PARAM_STR);
+        return $result -> execute();
 
         while($row = $result->fetch())
         {
-            $eventsAll[$i]['id'] = $row['id_category'];
-            $eventsAll[$i]['category'] = $row['category'];
-            $i++;
+            $eventsAll['id'] = $row['id_category'];
+            $eventsAll['category'] = $row['category'];
         }
         return $eventsAll;
+
+
+//TODO: !!!!!!!!!!!!
+
+
+        $db = Db::getConnection();
+        $result = $db->query('SELECT title_events, events_category.category, full_text_events, date_events, count_views_events, img_events, id_category_events FROM events_afisha LEFT JOIN events_category ON events_afisha.id_category_events = events_category.id_category WHERE id_events = '. $id. ' ORDER BY date_events ASC');
+
+        $result->setFetchMode(PDO::FETCH_ASSOC);
+
+        $eventsItem = $result->fetch();
+
+        return $eventsItem;
 
     }
 }
