@@ -60,12 +60,24 @@ class Afisha
         }
         return $eventsAll;
     }
-    //TODO: сделать вывод категорий
-//    public static function getCategory(){
-//        $db = Db::getConnection();
-//        $categor = array();
-//
-//        $result = $db->query('SELECT ');
-//
-//    }
+    public static function getCategory()
+    {
+        // Соединение с БД
+        $db = Db::getConnection();
+        $sql = 'SELECT * FROM events_category';
+
+        $eventsAll = array();
+        $result = $db->query($sql);
+
+        $i = 0;
+
+        while($row = $result->fetch())
+        {
+            $eventsAll[$i]['id'] = $row['id_category'];
+            $eventsAll[$i]['category'] = $row['category'];
+            $i++;
+        }
+        return $eventsAll;
+
+    }
 }

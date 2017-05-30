@@ -55,10 +55,10 @@
                         <a href="#"><i class="fa fa-table nav_icon"></i>Афиша <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level collapse">
                             <li>
-                                <a href="#">Категории событий</a>
+                                <a href="/admin/afishacategory">Категории событий</a>
                             </li>
                             <li>
-                                <a href="#">Добавление события</a>
+                                <a href="/admin/afishaedit">Добавление события</a>
                             </li>
                             <li>
                                 <a href="#">Категории <span class="nav-badge">12</span></a>
